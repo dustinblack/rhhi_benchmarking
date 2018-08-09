@@ -16,6 +16,7 @@
       name: "ds2-mysql-{{ item }}"
       tag: "{{ db_ds2_vm_tag }}"
       delete_protected: no
+      vm_infra_create_single_timeout: 360
       profile:
         disk_format: cow
         storage_domain: vmstore
